@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="mx-auto overflow-hidden mt-10 shadow-lg mb-2 bg-purple-900 shadow-lg border rounded-lg lg:w-2/6 md:w-3/6 sm:w-4/6"
+    >
+      <div class="">
+        <input name="calculate" id="screen" class="w-full pt-24" />
+
+        <div class="flex items-stretch bg-purple-900 h-24">
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('%')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+              
+            >
+              %
+            </div>
+          </div>
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold" 
+          >
+            <div onclick="clearScreen('c')"
+               class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              c
+            </div>
+          </div>
+
+       
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('÷')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              ÷
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-stretch bg-purple-900 h-24">
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('7')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              7
+            </div>
+          </div>
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('8')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              8
+            </div>
+          </div>
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('9')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              9
+            </div>
+          </div>
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('*')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              *
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-stretch bg-purple-900 h-24">
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('4')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              4
+            </div>
+          </div>
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('5')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              5
+            </div>
+          </div>
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('6')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              6
+            </div>
+          </div>
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('-')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              -
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-stretch bg-purple-900 h-24">
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('1')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              1
+            </div>
+          </div>
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('2')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              2
+            </div>
+          </div>
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('3')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              3
+            </div>
+          </div>
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('+')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              +
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-stretch bg-purple-900 h-24 mb-4">
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('+')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              +
+            </div>
+          </div>
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('0')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              0
+            </div>
+          </div>
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="addToScreen('.')"
+              class="rounded-full h-20 w-20 flex items-center bg-purple-800 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              .
+            </div>
+          </div>
+
+          <div
+            class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+          >
+            <div onclick="calculate('=')"
+              class="rounded-full h-20 w-20 flex items-center bg-orange-500 justify-center shadow-lg border-2 border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+            >
+              =
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="App.js"></script>
+  </body>
+</html>
+
+<!-- <div id="calculator">
+    <input type="text" id="screen" disabled>
+    <br>
+    <button onclick="addToScreen('1')">1</button>
+    <button onclick="addToScreen('2')">2</button>
+    <button onclick="addToScreen('3')">3</button>
+    <button onclick="addToScreen('+')">+</button>
+    <br>
+    <button onclick="addToScreen('4')">4</button>
+    <button onclick="addToScreen('5')">5</button>
+    <button onclick="addToScreen('6')">6</button>
+    <button onclick="addToScreen('-')">-</button>
+    <br>
+    <button onclick="addToScreen('7')">7</button>
+    <button onclick="addToScreen('8')">8</button>
+    <button onclick="addToScreen('9')">9</button>
+    <button onclick="addToScreen('*')">*</button>
+    <br>
+    <button onclick="addToScreen('0')">0</button>
+    <button onclick="addToScreen('.')">.</button>
+    <button onclick="clearScreen()">C</button>
+    <button onclick="calculate()">=</button>
+</div> -->
